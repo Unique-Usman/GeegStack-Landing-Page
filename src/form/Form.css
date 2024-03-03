@@ -1,0 +1,54 @@
+.register {
+  width: 43.8125rem;
+  background-color: white;
+  color: #28918a;
+  border-radius: 5px;
+}
+
+.register h3 {
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.register_name {
+  display: flex;
+  justify-content: space-between;
+}
+.register_name div {
+  width: 48%;
+}
+
+.register_form {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #28918a;
+  height: 60px;
+  background-color: white;
+  margin: auto;
+  border-radius: 5px;
+  outline: none;
+}
+.input-wrapper {
+  margin: 2rem 0;
+}
+.submit button {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #28918a;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
