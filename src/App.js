@@ -1,11 +1,11 @@
-import Header from "./header/Header.js"
-import Main from "./Main/Main.js"
+import Header from "./header/Header.js";
+import Main from "./Main/Main.js";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Main/>
+      <Header />
+      <Main />
     </div>
   );
 }

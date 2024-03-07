@@ -1,6 +1,7 @@
 import Form from "../form/Form.js";
 import CourseInfo from "../information/CourseInfo.js";
 import Testimonial from "../testimonial/Testimonial.js";
+import Feature from "../features/Feature.js";
 import "./Main.css";
 
 export default function Main() {
@@ -19,6 +20,7 @@ export default function Main() {
         </div>
       </div>
       <Testimonial />
+      <Feature />
     </div>
   );
 }
