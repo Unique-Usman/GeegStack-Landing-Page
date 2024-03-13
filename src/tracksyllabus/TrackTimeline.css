@@ -1,0 +1,37 @@
+.track-timeline {
+  width: 80%;
+  margin: auto;
+}
+.track-timeline-header {
+  font-weight: 700;
+}
+.track-timelines-items {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.track-timelines-item {
+  width: 45%;
+  line-height: 30px;
+}
+
+.track-timeline-img {
+  width: 100%;
+  position: relative;
+  height: 700px;
+  background: #28918a url(../images/geegstack-timeline.png) 30% 70% / cover
+    no-repeat;
+}
+.track-timeline-btn {
+  background-color: #28918a;
+  color: white;
+  height: 60px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 1rem 0;
+}

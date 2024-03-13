@@ -3,7 +3,7 @@ import "./Feature.css";
 export default function Feature() {
   const features = [
     {
-      featureImage: "../images/geegstack-timeline.png",
+      featureImage: "../images/geegstack-timeline_icon.png",
       featureTitle: "24 Weeks",
       featureText:
         "Within 24 weeks, you’ll be equipped with the skill sets you need to become a professional full stack developer and build and manage professional, scalable and user friendly software applications.",

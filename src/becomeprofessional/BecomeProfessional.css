@@ -1,0 +1,50 @@
+.BecomeProfessional {
+  width: 80%;
+  margin: auto;
+}
+.BecomeProfessional h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.becomeprofcontent h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #28918a;
+  margin: 10px auto;
+}
+.becomeprofessional {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.becomeprofcontent {
+  width: 45%;
+}
+.becomeprofcontent p {
+  margin: 1rem 0;
+  line-height: 30px;
+}
+.becomeprofimg {
+  width: 50%;
+  position: relative;
+  height: 600px;
+  background: #28918a url(../images/geegstack-professional.jpg) 50% 50% / cover
+    no-repeat;
+}
+/* .becomeprofimg img {
+  width: 100%;
+  height: 100%;
+} */
+.becomeprofessionbtn {
+  background-color: #28918a;
+  color: white;
+  height: 60px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
