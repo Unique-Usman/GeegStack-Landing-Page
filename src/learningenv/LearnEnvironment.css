@@ -1,0 +1,39 @@
+.learn-env {
+  width: 80%;
+  margin: 30px auto;
+}
+.learn-env-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.learn-env h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.learn-env-img {
+  width: 70%;
+  position: relative;
+  height: 700px;
+  background: #28918a url(../images/geegstack-learn-env.jpg) 90% 10% / cover
+    no-repeat;
+  border-radius: 10px;
+}
+.learn-env-text {
+  position: absolute;
+  width: 33%;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  z-index: 2;
+  right: 0;
+  border-radius: 10px;
+}
+.learning-env-feature {
+  font-weight: 700;
+}
+.link a {
+  color: #28918a;
+}

@@ -1,0 +1,47 @@
+.geegstack-faq {
+  width: 80%;
+  margin: 30px auto;
+}
+.geegstack-faq h1 {
+}
+.geegstack-faqp {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.faq {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.faq-li {
+  width: 50%;
+}
+.faq-q {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.answers,
+.answers li {
+  list-style: disc;
+}
+.answers li {
+  margin-left: 1rem;
+}
+.faq-btn {
+  background-color: #28918a;
+  color: white;
+  height: 60px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 1rem 0;
+  display: inline-block;
+}

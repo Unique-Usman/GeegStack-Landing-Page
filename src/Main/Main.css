@@ -1,5 +1,8 @@
 .main {
 }
+p {
+  line-height: 30px;
+}
 
 .course-info-regis-ctn {
   width: 100%;
@@ -30,4 +33,33 @@
   width: 30%;
   margin: 30px auto;
   text-align: center;
+}
+
+.get-pack {
+  width: 40%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #28918a;
+  padding: 1rem;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+.get-pack p {
+  color: white;
+  width: 60%;
+}
+.get-pack button {
+  background-color: white;
+  color: #28918a;
+  height: 60px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 1rem 0;
+  display: inline-block;
 }

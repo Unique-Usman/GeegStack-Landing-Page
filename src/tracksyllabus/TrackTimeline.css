@@ -22,6 +22,7 @@
   height: 700px;
   background: #28918a url(../images/geegstack-timeline.png) 30% 70% / cover
     no-repeat;
+  border-radius: 10px;
 }
 .track-timeline-btn {
   background-color: #28918a;

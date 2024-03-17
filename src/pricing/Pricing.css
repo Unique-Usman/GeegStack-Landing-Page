@@ -1,0 +1,66 @@
+.pricing-ctn {
+  background-color: #28918a;
+  width: 100%;
+}
+.pricing {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #28918a;
+  color: #28918a;
+  width: 30%;
+  min-width: 300px;
+}
+
+.pricing-card-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pricing-card-price {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.pricing-card-duration {
+  margin-top: 5px;
+}
+
+.pricing-card-classdays {
+  margin-top: 5px;
+}
+
+.pricing-card-time {
+  margin-top: 5px;
+}
+.amenity {
+  list-style: disc;
+  margin-left: 20px;
+}
+.amenities-head {
+  font-size: 18px;
+  font-weight: 700;
+}
+.pricing-card-btn {
+  background-color: #28918a;
+  color: white;
+  height: 60px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 1rem 0;
+}

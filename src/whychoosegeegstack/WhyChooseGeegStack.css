@@ -1,0 +1,31 @@
+.why-geegstack {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.why-geegstak-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.why-geegstack-img {
+  width: 48%;
+  height: 600px;
+  background: #28918a url(../images/geegstack-learn-env.jpg) 90% 10% / cover
+    no-repeat;
+  border-radius: 10px;
+}
+.why-geegstack-text {
+  width: 48%;
+}
+.why-geegstack-text h1 {
+  text-align: center;
+}
+.reason-head {
+  font-weight: 700;
+}
+.reasons li {
+  margin: 1rem 0 1rem 2rem;
+  line-height: 30px;
+  list-style-type: disc;
+}

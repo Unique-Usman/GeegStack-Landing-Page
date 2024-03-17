@@ -5,6 +5,11 @@ import Feature from "../features/Feature.js";
 import BecomeProfessional from "../becomeprofessional/BecomeProfessional.js";
 import TrackTimeline from "../tracksyllabus/TrackTimeline.js";
 import "./Main.css";
+import LearningEnvironment from "../learningenv/LearnEnvironment.js";
+import WhyChooseGeegStack from "../whychoosegeegstack/WhyChooseGeegStack.js";
+import CareerSupport from "../careersupport/CareerSupport.js";
+import Faq from "../faq/Faq.js";
+import Pricing from "../pricing/Pricing.js";
 
 export default function Main() {
   let track = "Full Stack";
@@ -47,6 +52,88 @@ export default function Main() {
         " Having completed the development learning process, you will learn to host your projects live to be accessible to anyone on the internet.",
     },
   ];
+  let faqs = [
+    {
+      header: "What will I accomplish at the end of the program?",
+      content: [
+        "At the end of the program, you would acquire the practical skills needed to build standard web based software applications and websites and be ready to be hired as a software developer.",
+      ],
+    },
+    {
+      header: "Will I work on projects during the course?",
+      content: [
+        "Yes, you will certainly work on practical real world projects during the course. Geegstack students work on average 15 projects during the program.",
+      ],
+    },
+
+    {
+      header: "Will Geegstack provide me with a job after the course?",
+      content: [
+        "We do not guarantee you a job immediately after the course, however, we will give you all the needed insights to secure your first paid job or gig after learning the course and refer you to opportunities when available - and we will support you until you get it!",
+      ],
+    },
+    {
+      header: "Can I pay in installment?",
+      content: [
+        "We recommend one time payment for an uninterrupted learning. For installment payment, 60% of the payment has to be made to start the course while the balance is paid before the mid of the course.",
+      ],
+    },
+    {
+      header:
+        "I don’t have any coding experience before, can I join the program?",
+      content: [
+        "Yes, the program is beginner friendly. We are starting from the basics.",
+      ],
+    },
+    {
+      header: "What are the tools I need to join the class?",
+      content: [
+        "You need a PC with at least: 4G RAM, 128 HDD/SSD and 2 hours battery lifespan. All the needed software will be installed for you when the program starts.",
+      ],
+    },
+    {
+      header: "I don’t live in Ibadan, how can I join the class?",
+      content: [
+        "We have a conducive boarding facility with limited space for distance students who are interested. You can also consider the self-paced online classes.",
+      ],
+    },
+  ];
+
+  let pricing = [
+    {
+      header: "Boarding and Internship",
+      price: "N400,000",
+      duration: "8 months (5 months learning, 3 months Internship)",
+      classDays: "Monday - Saturday",
+      time: "10am - 3pm",
+      Amenities: ["Adequate power supply", "Internet Access"],
+    },
+    {
+      header: "Boarding Only",
+      price: "N300,000",
+      duration: "18weeks",
+      classDays: "Monday - Saturday",
+      time: "10am - 3pm",
+      Amenities: ["Adequate power supply", "Internet Access"],
+    },
+
+    {
+      header: "Week day Classes",
+      price: "N205,000",
+      duration: " 24 weeks",
+      classDays: "Monday - Thursday",
+      time: "10am - 3pm",
+      Amenities: ["Adequate power supply", "Internet Access"],
+    },
+    {
+      header: "Online Classes",
+      price: "N175,000",
+      duration: "Self Paced",
+      classDays: "",
+      time: "",
+      Amenities: [],
+    },
+  ];
   return (
     <div className="main">
       <div className="course-info-regis-ctn">
@@ -75,6 +162,17 @@ export default function Main() {
         </p>
       </div>
       <TrackTimeline tracks={tracks} />
+      <LearningEnvironment />
+      <WhyChooseGeegStack />
+      <CareerSupport />
+      <div className="get-pack">
+        <p>
+          Interested in what you'll learn during the course of this program ?
+        </p>
+        <button>Get Program Package</button>
+      </div>
+      <Faq faqs={faqs} />
+      <Pricing pricing={pricing} />
     </div>
   );
 }

@@ -32,6 +32,7 @@
   height: 600px;
   background: #28918a url(../images/geegstack-professional.jpg) 50% 50% / cover
     no-repeat;
+  border-radius: 10px;
 }
 /* .becomeprofimg img {
   width: 100%;
