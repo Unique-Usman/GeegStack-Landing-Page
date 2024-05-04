@@ -1,6 +1,6 @@
 import "./LearnEnvironment.css";
 
-export default function LearningEnvironment() {
+export default function LearningEnvironment({displayForm}) {
   return (
     <div className="learn-env">
       <h1>A Learning Environment That Inspires</h1>
@@ -27,7 +27,7 @@ export default function LearningEnvironment() {
               Learn At a world class facility{" "}
             </p>
             <p className="link">
-              <a href="#">Register for the program</a> to learn at the top
+              <a href="#" onClick={displayForm}>Register for the program</a> to learn at the top
               learning facility in Ibadan
             </p>
           </div>

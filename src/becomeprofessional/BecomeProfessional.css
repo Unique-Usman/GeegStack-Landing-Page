@@ -49,3 +49,17 @@
   font-size: 16px;
   font-weight: 600;
 }
+
+@media (max-width: 58rem) {
+  .becomeprofessional {
+    flex-direction: column-reverse;
+  }
+
+  .becomeprofimg {
+    width: 100%;
+  }
+
+  .becomeprofcontent {
+    width: 100%;
+  }
+}

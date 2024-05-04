@@ -1,6 +1,6 @@
 import "./Faq.css";
 
-export default function Faq({ faqs }) {
+export default function Faq({ faqs, displayForm}) {
   return (
     <div className="geegstack-faq">
       <h1>Frequently Asked Questions</h1>
@@ -16,14 +16,14 @@ export default function Faq({ faqs }) {
               <p className="faq-q">{faq.header}</p>
               <ol className="answers" type="a">
                 {faq.content.map((ans, ind) => {
-                  return <li className="ans">{ans}</li>;
+                  return <li className="ans" key={ind}>{ans}</li>;
                 })}
               </ol>
             </li>
           );
         })}
       </ul>
-      <button className="faq-btn">Get Program Package</button>
+      <button className="faq-btn" onClick={displayForm}>Get Program Package</button>
     </div>
   );
 }

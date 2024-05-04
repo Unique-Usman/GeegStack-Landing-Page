@@ -1,5 +1,4 @@
 import Form from "../form/Form.js";
-import CourseInfo from "../information/CourseInfo.js";
 import Testimonial from "../testimonial/Testimonial.js";
 import Feature from "../features/Feature.js";
 import BecomeProfessional from "../becomeprofessional/BecomeProfessional.js";
@@ -10,6 +9,12 @@ import WhyChooseGeegStack from "../whychoosegeegstack/WhyChooseGeegStack.js";
 import CareerSupport from "../careersupport/CareerSupport.js";
 import Faq from "../faq/Faq.js";
 import Pricing from "../pricing/Pricing.js";
+import { useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Main() {
   let track = "Full Stack";
@@ -134,8 +139,36 @@ export default function Main() {
       Amenities: [],
     },
   ];
+  const [showForm, setShowForm] = useState(false);
+
+  function displayForm() {
+    setShowForm(showFrom => !showForm);
+  }
+  
   return (
     <div className="main">
+      {showForm &&
+      <div style={{
+        backgroundColor: "white",
+        position: "fixed",
+        width: "100vw",
+        height: "100vh",
+        top: 0,
+        left: 0,
+        zIndex: 200000000000,
+        opacity: 0.95,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}>
+        <div className="cancel" onClick={() => setShowForm(false)}>
+          <span className="bar first_bar"></span>
+          <span className="bar third_bar"></span>
+          <span className="bar second_bar"></span>
+        </div>
+        <Form customcss={true}/>
+      </div>
+      }
       <div className="course-info-regis-ctn">
         <div className="overlay"></div>
         <div className="course-info-regis-content">
@@ -145,12 +178,12 @@ export default function Main() {
             duration={"24 weeks"}
             startDate={"Anytime, Anyday"}
           />
-          <Form />
+          <Form customcss={true}/>
         </div>
       </div>
       <Testimonial />
       <Feature />
-      <BecomeProfessional track={track} content={content} />
+      <BecomeProfessional track={track} content={content} displayForm={displayForm}/>
       <div className="student-experience">
         <h3>Student's Experience</h3>
         <p>
@@ -161,18 +194,59 @@ export default function Main() {
           work.
         </p>
       </div>
-      <TrackTimeline tracks={tracks} />
-      <LearningEnvironment />
+      <TrackTimeline tracks={tracks} displayForm={displayForm}/>
+      <LearningEnvironment displayForm={displayForm}/>
       <WhyChooseGeegStack />
       <CareerSupport />
       <div className="get-pack">
         <p>
           Interested in what you'll learn during the course of this program ?
         </p>
-        <button>Get Program Package</button>
+        <button onClick={displayForm}>Get Program Package</button>
       </div>
-      <Faq faqs={faqs} />
-      <Pricing pricing={pricing} />
+      <Faq faqs={faqs} displayForm={displayForm} />
+      <Pricing pricing={pricing} displayForm={displayForm} />
+    </div>
+  );
+}
+
+function CourseInfo({
+  courseName,
+  courseDescription,
+  duration,
+  startDate,
+}) {
+  return (
+    <div className="course_info">
+      <div className="coursename">
+        <h1 className="course-name">{courseName}</h1>
+        <p className="course-description">{courseDescription}</p>
+      </div>
+      <div className="enrollement-details">
+        <div className="enrollement-details-content">
+          <h3>Enrollment Details</h3>
+          <div>
+            <div className="enrollement-detail">
+              <p>
+                <FontAwesomeIcon icon={faLocationDot} /> Location
+              </p>
+              <p>Opposite University of Ibadan Second gate</p>
+            </div>
+            <div className="enrollement-detail">
+              <p>
+                <FontAwesomeIcon icon={faCalendarDays} /> Start Date
+              </p>
+              <p>{startDate}</p>
+            </div>
+            <div className="enrollement-detail">
+              <p>
+                <FontAwesomeIcon icon={faClock} /> Duration
+              </p>
+              <p>{duration}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -36,3 +36,12 @@
   font-weight: 600;
   margin: 1rem 0;
 }
+
+@media (max-width: 58rem) {
+  .track-timelines-items {
+    flex-direction: column;
+  }
+  .track-timelines-item {
+    width: 100%;
+  } 
+}

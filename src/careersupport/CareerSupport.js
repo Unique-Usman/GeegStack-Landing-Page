@@ -2,7 +2,7 @@ import "./CareerSupport.css";
 
 export default function CareerSupport() {
   return (
-    <div class="geegstack-career-support">
+    <div className="geegstack-career-support">
       <h1>Career Support</h1>
       <p>
         By enrolling for our full stack development program, you will enjoy

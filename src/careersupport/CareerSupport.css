@@ -12,3 +12,9 @@ h1 {
   text-align: center;
   margin: auto;
 }
+
+@media (max-width: 58rem) {
+  .geegstack-career-support p {
+    width: 100%;
+  } 
+}

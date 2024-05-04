@@ -37,3 +37,15 @@
 .link a {
   color: #28918a;
 }
+
+@media (max-width: 58rem) {
+  .learn-env-content {
+    position: static;
+    flex-direction: column;
+  }
+  .learn-env-img, .learn-env-text{
+    position: static;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
